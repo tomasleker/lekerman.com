@@ -1,10 +1,10 @@
-import { Linkedin, Twitter, Instagram, Mail, ExternalLink } from 'lucide-react'
+import { Linkedin, Instagram, Mail, MessageCircle, ExternalLink } from 'lucide-react'
 import type { SocialLink } from '@/types'
 import { cn } from '@/lib/utils'
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number }>> = {
   LinkedIn: Linkedin,
-  Twitter: Twitter,
+  WhatsApp: MessageCircle,
   Instagram: Instagram,
   Email: Mail,
 }

@@ -11,14 +11,14 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-[100svh] flex flex-col justify-center pt-20 pb-16 px-5 md:px-8"
+      className="relative min-h-[100svh] flex flex-col justify-center pt-20 pb-16 px-5 md:px-8 overflow-hidden"
       aria-label="Presentación"
     >
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none overflow-hidden"
         aria-hidden="true"
       >
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(100vw,600px)] h-[min(66vw,400px)] bg-accent/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-reading mx-auto w-full">
@@ -32,7 +32,7 @@ export function HeroSection() {
         <AnimatedSection delay={100}>
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.05] text-balance mb-6">
             {profile.firstName}{' '}
-            <span className="text-accent">{profile.name.split(' ')[1]}</span>
+            <span className="text-accent">{profile.name.split(' ').slice(-1)[0]}</span>
           </h1>
         </AnimatedSection>
 

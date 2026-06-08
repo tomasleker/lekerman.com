@@ -8,11 +8,11 @@ export function StructuredData() {
     name: profile.name,
     url: 'https://lekerman.com',
     sameAs: socialLinks.map((l) => l.url),
-    jobTitle: 'Fundador & CEO',
+    jobTitle: 'Regional Logistics Operational Excellence Specialist',
     worksFor: {
       '@type': 'Organization',
-      name: 'Kokora Matcha',
-      url: 'https://kokoramatcha.com',
+      name: 'PedidosYa',
+      url: 'https://www.pedidosya.com',
     },
     address: {
       '@type': 'PostalAddress',

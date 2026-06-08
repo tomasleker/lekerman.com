@@ -53,10 +53,10 @@ export function ContactSection() {
       if (res.ok) {
         setSubmitted(true)
       } else {
-        setError('No se pudo enviar el mensaje. Escribime directo a hola@lekerman.com')
+        setError('No se pudo enviar el mensaje. Escribime directo a tomas@lekerman.com')
       }
     } catch {
-      setError('No se pudo enviar el mensaje. Escribime directo a hola@lekerman.com')
+      setError('No se pudo enviar el mensaje. Escribime directo a tomas@lekerman.com')
     }
   }
 

@@ -21,18 +21,18 @@ export function ExperienceSection() {
           </div>
         </AnimatedSection>
 
-        <div className="relative">
+        <div className="relative overflow-hidden">
           <div
-            className="absolute left-0 top-2 bottom-2 w-px bg-border"
+            className="absolute left-[0.625rem] top-2 bottom-2 w-px bg-border"
             aria-hidden="true"
           />
 
-          <div className="space-y-12 pl-8">
+          <div className="space-y-12 pl-10">
             {experience.map((item, index) => (
               <AnimatedSection key={item.id} delay={index * 100}>
                 <div className="relative group">
                   <div
-                    className={`absolute -left-[2.25rem] top-1.5 w-2.5 h-2.5 rounded-full border-2 transition-colors duration-200 ${
+                    className={`absolute -left-[2.5rem] top-1.5 w-2.5 h-2.5 rounded-full border-2 transition-colors duration-200 ${
                       item.current
                         ? 'bg-accent border-accent'
                         : 'bg-background border-border group-hover:border-accent'

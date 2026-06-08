@@ -1,37 +1,38 @@
 export const profile = {
-  name: 'Tomás Lekerman',
+  name: 'Tomás Eitan Lekerman',
   firstName: 'Tomás',
-  tagline: 'Fundador · Emprendedor · Builder',
-  bio: 'Fundador de Kokora Matcha. Apasionado por construir productos y empresas que resuelven problemas reales. Creo en el poder del diseño, la tecnología y los negocios para generar impacto.',
+  tagline: 'Operaciones · E-commerce · Producto',
+  bio: 'Especialista en excelencia operativa logística en PedidosYa. Me apasionan el e-commerce, la tecnología y el producto — construir soluciones que mejoren procesos y la experiencia del usuario.',
   longBio: `
-    Soy emprendedor con foco en construir marcas y productos que importen.
-    Actualmente lidero Kokora Matcha, donde combinamos la tradición japonesa del matcha
-    con el estilo de vida latinoamericano.
+    Trabajo en operaciones y logística en PedidosYa (Delivery Hero), liderando equipos
+    e iniciativas de mejora continua en la región LATAM. Mi día a día combina análisis de datos,
+    gestión de proyectos y optimización de procesos para escalar la operación en múltiples países.
 
-    Mi formación combina negocios, tecnología y diseño — una intersección que me permite
-    pensar en los problemas desde múltiples ángulos. Me interesan profundamente los
-    modelos de negocio innovadores, el desarrollo de marca, el product-led growth
-    y el ecosistema emprendedor de LATAM.
+    Me encanta el e-commerce, la tecnología y el producto. Disfruto pensar cómo los sistemas,
+    los datos y el diseño de procesos se traducen en mejor experiencia para usuarios y partners.
 
-    Busco activamente conectar con founders, inversores y operadores que estén
-    construyendo cosas que importen.
+    También fundé Kokora Matcha, donde sigo aplicando lo que más me motiva: construir marcas
+    y productos con impacto real en el mercado latinoamericano.
+
+    Me gradué de la Licenciatura en Administración de Empresas en la UBA en 2025.
+    Busco conectar con personas que estén construyendo cosas que importen en tech, retail y operaciones.
   `,
   location: 'Buenos Aires, Argentina',
-  email: 'hola@lekerman.com',
+  email: 'tomas@lekerman.com',
   studies: [
     {
       degree: 'Licenciatura en Administración de Empresas',
       institution: 'Universidad de Buenos Aires (UBA)',
-      period: '2020 – presente',
+      period: '2020 – 2025',
     },
   ],
   interests: [
-    'Startups & VC',
-    'Branding',
-    'Product-Led Growth',
-    'Gastronomía',
-    'Filosofía',
-    'Diseño',
+    'E-commerce',
+    'Producto',
     'Tecnología',
+    'Operaciones',
+    'Data & Analytics',
+    'Mejora continua',
+    'Logística',
   ],
 } as const

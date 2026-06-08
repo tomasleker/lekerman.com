@@ -45,7 +45,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tomás Lekerman — Fundador & Emprendedor',
     description: 'Fundador de Kokora Matcha. Builder basado en Buenos Aires.',
-    creator: '@tomaslekerman',
     images: ['/opengraph-image'],
   },
   robots: {

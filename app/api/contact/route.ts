@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
 
     await resend.emails.send({
       from: 'sitio@lekerman.com',
-      to: 'hola@lekerman.com',
+      to: 'tomas@lekerman.com',
       subject: `[lekerman.com] Nuevo mensaje: ${data.reason} — ${data.name}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px;">
