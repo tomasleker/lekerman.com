@@ -25,6 +25,7 @@ export const profile = {
       degree: 'Licenciatura en Sistemas de Información de las Organizaciones',
       institution: 'Universidad de Buenos Aires — Facultad de Ciencias Económicas (FCE)',
       period: '2020 – 2025',
+      logoSrc: '/logos/fce-uba.png',
     },
   ],
   interests: [

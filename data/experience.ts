@@ -5,7 +5,7 @@ export const experienceGroups: ExperienceGroup[] = [
     id: 'pedidosya',
     company: 'PedidosYa',
     companyUrl: 'https://www.pedidosya.com',
-    companyLogo: '/logos/pedidosya.svg',
+    companyLogo: '/logos/pedidosya.png',
     subtitle: 'Delivery Hero · Jornada completa',
     period: { start: 'oct. 2022', end: 'presente' },
     roles: [
@@ -56,7 +56,7 @@ export const experienceGroups: ExperienceGroup[] = [
     id: 'kokora-matcha',
     company: 'Kokora Matcha',
     companyUrl: 'https://kokoramatcha.com',
-    companyLogo: '/logos/kokora-matcha.svg',
+    companyLogo: '/logos/kokora-matcha.png',
     subtitle: 'Emprendimiento · CPG & E-commerce',
     period: { start: '2023', end: 'presente' },
     roles: [

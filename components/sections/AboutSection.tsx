@@ -1,6 +1,7 @@
 import { profile } from '@/data/profile'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { Badge } from '@/components/ui/Badge'
+import { CompanyLogo } from '@/components/ui/CompanyLogo'
 import { SectionHeader } from '@/components/layout/Section'
 
 export function AboutSection() {
@@ -38,15 +39,24 @@ export function AboutSection() {
               {profile.studies.map((study) => (
                 <li
                   key={study.institution}
-                  className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 pb-4 border-b border-border/50 last:border-0"
+                  className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-4 border-b border-border/50 last:border-0"
                 >
-                  <div>
-                    <p className="font-body font-medium text-text-primary">
-                      {study.degree}
-                    </p>
-                    <p className="text-sm text-text-secondary">
-                      {study.institution}
-                    </p>
+                  <div className="flex items-start gap-4">
+                    {'logoSrc' in study && study.logoSrc && (
+                      <CompanyLogo
+                        src={study.logoSrc}
+                        alt={`Logo de ${study.institution}`}
+                        size={48}
+                      />
+                    )}
+                    <div>
+                      <p className="font-body font-medium text-text-primary">
+                        {study.degree}
+                      </p>
+                      <p className="text-sm text-text-secondary">
+                        {study.institution}
+                      </p>
+                    </div>
                   </div>
                   <span className="font-mono text-xs text-text-muted shrink-0">
                     {study.period}

@@ -27,7 +27,7 @@ export function CompanyLogo({
         alt={alt}
         width={size}
         height={size}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-contain"
       />
     </div>
   )

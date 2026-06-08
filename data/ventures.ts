@@ -8,7 +8,7 @@ export const ventures: Venture[] = [
     description:
       'Marca de matcha ceremonial y premium que lleva la cultura japonesa del matcha al estilo de vida latinoamericano. Producto, marca y comunidad construidos desde cero.',
     url: 'https://kokoramatcha.com',
-    logoSrc: '/logos/kokora-matcha.svg',
+    logoSrc: '/logos/kokora-matcha.png',
     status: 'activo',
     featured: true,
     year: '2023',
