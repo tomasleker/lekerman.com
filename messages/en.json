@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "ventures": "Projects",
+    "achievements": "Achievements",
+    "contact": "Contact"
+  },
+  "hero": {
+    "cta": "Connect",
+    "learnMore": "Learn more"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "submit": "Send message",
+    "success": "Message received!"
+  }
+}

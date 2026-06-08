@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "ventures": "Proyectos",
+    "achievements": "Logros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "cta": "Conectar",
+    "learnMore": "Conocer más"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "submit": "Enviar mensaje",
+    "success": "¡Mensaje recibido!"
+  }
+}
