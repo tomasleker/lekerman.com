@@ -58,12 +58,12 @@ export const experienceGroups: ExperienceGroup[] = [
     companyUrl: 'https://kokoramatcha.com',
     companyLogo: '/logos/kokora-matcha.png',
     subtitle: 'Emprendimiento · CPG & E-commerce',
-    period: { start: '2023', end: 'presente' },
+    period: { start: '2025', end: 'presente' },
     roles: [
       {
         id: 'kokora-matcha-founder',
         role: 'Fundador & CEO',
-        period: { start: '2023', end: 'presente' },
+        period: { start: '2025', end: 'presente' },
         description:
           'Fundé y lidero Kokora Matcha, una marca de matcha premium orientada al mercado latinoamericano. Responsable de estrategia, producto, marca, operaciones y growth.',
         tags: ['Emprendimiento', 'Branding', 'E-commerce', 'CPG'],

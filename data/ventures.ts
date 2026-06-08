@@ -11,7 +11,7 @@ export const ventures: Venture[] = [
     logoSrc: '/logos/kokora-matcha.png',
     status: 'activo',
     featured: true,
-    year: '2023',
+    year: '2025',
     tags: ['CPG', 'E-commerce', 'Branding', 'LATAM'],
   },
   {
