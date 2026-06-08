@@ -30,6 +30,7 @@ export function HeroSection() {
             <ProfileAvatar
               name={profile.name}
               initials={profile.initials}
+              photoSrc={profile.photoSrc}
             />
           </AnimatedSection>
 

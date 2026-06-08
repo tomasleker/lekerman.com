@@ -2,6 +2,7 @@ export const profile = {
   name: 'Tomás Eitan Lekerman',
   firstName: 'Tomás',
   initials: 'TL',
+  photoSrc: '/images/profile.png',
   tagline: 'Operaciones · E-commerce · Producto',
   bio: 'Especialista en excelencia operativa logística en PedidosYa. Me apasionan el e-commerce, la tecnología y el producto — construir soluciones que mejoren procesos y la experiencia del usuario.',
   longBio: `
