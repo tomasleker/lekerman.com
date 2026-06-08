@@ -11,9 +11,4 @@ export const socialLinks: SocialLink[] = [
     url: 'https://wa.me/541135736866',
     label: 'WhatsApp de Tomás Eitan Lekerman',
   },
-  {
-    platform: 'Instagram',
-    url: 'https://instagram.com/tomaslekerman',
-    label: 'Instagram de Tomás Eitan Lekerman',
-  },
 ]

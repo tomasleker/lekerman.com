@@ -14,15 +14,15 @@ export const profile = {
     También fundé Kokora Matcha, donde sigo aplicando lo que más me motiva: construir marcas
     y productos con impacto real en el mercado latinoamericano.
 
-    Me gradué de la Licenciatura en Administración de Empresas en la UBA en 2025.
+    Me gradué de la Licenciatura en Sistemas de Información de las Organizaciones en la UBA (FCE) en 2025.
     Busco conectar con personas que estén construyendo cosas que importen en tech, retail y operaciones.
   `,
   location: 'Buenos Aires, Argentina',
   email: 'tomas@lekerman.com',
   studies: [
     {
-      degree: 'Licenciatura en Administración de Empresas',
-      institution: 'Universidad de Buenos Aires (UBA)',
+      degree: 'Licenciatura en Sistemas de Información de las Organizaciones',
+      institution: 'Universidad de Buenos Aires — Facultad de Ciencias Económicas (FCE)',
       period: '2020 – 2025',
     },
   ],
