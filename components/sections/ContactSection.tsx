@@ -69,7 +69,7 @@ export function ContactSection() {
   )
 
   return (
-    <section id="contacto" className="py-24 px-5 md:px-8" aria-labelledby="contact-heading">
+    <section id="contacto" className="py-24 px-5 md:px-8 bg-surface/40" aria-labelledby="contact-heading">
       <div className="max-w-reading mx-auto">
         <AnimatedSection>
           <div className="mb-16">
@@ -208,7 +208,7 @@ export function ContactSection() {
                 <p className="text-xs font-mono text-text-muted uppercase tracking-widest mb-3">
                   Redes
                 </p>
-                <SocialLinks links={socialLinks} iconSize={17} />
+                <SocialLinks links={socialLinks} variant="pill" iconSize={15} />
               </div>
 
               <div className="pt-4 border-t border-border">

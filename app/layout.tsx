@@ -9,42 +9,44 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://lekerman.com'),
   title: {
-    default: 'Tomás Lekerman — Fundador & Emprendedor',
-    template: '%s | Tomás Lekerman',
+    default: 'Tomás Eitan Lekerman — Operaciones · E-commerce · Producto',
+    template: '%s | Tomás Eitan Lekerman',
   },
   description:
-    'Tomás Lekerman — Fundador de Kokora Matcha. Emprendedor, builder y operador basado en Buenos Aires, Argentina.',
+    'Tomás Eitan Lekerman — Especialista en operaciones y logística en PedidosYa. Apasionado por el e-commerce, la tecnología y el producto. Buenos Aires, Argentina.',
   keywords: [
+    'Tomás Eitan Lekerman',
     'Tomás Lekerman',
     'Lekerman',
+    'PedidosYa',
+    'operaciones logísticas',
+    'e-commerce Argentina',
+    'producto',
     'Kokora Matcha',
-    'emprendedor Argentina',
-    'founder Buenos Aires',
-    'startup LATAM',
   ],
-  authors: [{ name: 'Tomás Lekerman', url: 'https://lekerman.com' }],
-  creator: 'Tomás Lekerman',
+  authors: [{ name: 'Tomás Eitan Lekerman', url: 'https://lekerman.com' }],
+  creator: 'Tomás Eitan Lekerman',
   openGraph: {
     type: 'website',
     locale: 'es_AR',
     url: 'https://lekerman.com',
-    siteName: 'Tomás Lekerman',
-    title: 'Tomás Lekerman — Fundador & Emprendedor',
+    siteName: 'Tomás Eitan Lekerman',
+    title: 'Tomás Eitan Lekerman — Operaciones · E-commerce · Producto',
     description:
-      'Fundador de Kokora Matcha. Emprendedor y builder basado en Buenos Aires, Argentina.',
+      'Especialista en operaciones y logística en PedidosYa. E-commerce, tecnología y producto. Buenos Aires, Argentina.',
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Tomás Lekerman',
+        alt: 'Tomás Eitan Lekerman',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tomás Lekerman — Fundador & Emprendedor',
-    description: 'Fundador de Kokora Matcha. Builder basado en Buenos Aires.',
+    title: 'Tomás Eitan Lekerman — Operaciones · E-commerce · Producto',
+    description: 'Operaciones, e-commerce y producto. Basado en Buenos Aires.',
     images: ['/opengraph-image'],
   },
   robots: {

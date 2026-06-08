@@ -1,3 +1,29 @@
+export interface ExperienceRole {
+  id: string
+  role: string
+  period: {
+    start: string
+    end: string | 'presente'
+  }
+  description: string
+  tags?: string[]
+  current?: boolean
+}
+
+export interface ExperienceGroup {
+  id: string
+  company: string
+  companyUrl?: string
+  companyLogo?: string
+  subtitle?: string
+  period: {
+    start: string
+    end: string | 'presente'
+  }
+  roles: ExperienceRole[]
+}
+
+/** @deprecated Usar ExperienceGroup */
 export interface ExperienceItem {
   id: string
   role: string

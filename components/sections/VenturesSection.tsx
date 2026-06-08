@@ -1,6 +1,7 @@
 import { ventures } from '@/data/ventures'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { Badge } from '@/components/ui/Badge'
+import { CompanyLogo } from '@/components/ui/CompanyLogo'
 import { ArrowUpRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -16,7 +17,7 @@ export function VenturesSection() {
   const rest = ventures.filter((v) => !v.featured)
 
   return (
-    <section id="emprendimientos" className="py-24 px-5 md:px-8" aria-labelledby="ventures-heading">
+    <section id="emprendimientos" className="py-24 px-5 md:px-8 bg-surface/40" aria-labelledby="ventures-heading">
       <div className="max-w-reading mx-auto">
         <AnimatedSection>
           <div className="mb-16">
@@ -43,18 +44,27 @@ export function VenturesSection() {
               )}
             >
               <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
-                <div>
-                  <div className="flex items-center gap-3 mb-1.5">
-                    <h3 className="font-display text-2xl font-semibold text-text-primary">
-                      {venture.name}
-                    </h3>
-                    <Badge variant={statusLabels[venture.status].variant}>
-                      {statusLabels[venture.status].label}
-                    </Badge>
+                <div className="flex items-start gap-4">
+                  {venture.logoSrc && (
+                    <CompanyLogo
+                      src={venture.logoSrc}
+                      alt={`Logo de ${venture.name}`}
+                      size={44}
+                    />
+                  )}
+                  <div>
+                    <div className="flex items-center gap-3 mb-1.5">
+                      <h3 className="font-display text-2xl font-semibold text-text-primary">
+                        {venture.name}
+                      </h3>
+                      <Badge variant={statusLabels[venture.status].variant}>
+                        {statusLabels[venture.status].label}
+                      </Badge>
+                    </div>
+                    <p className="text-text-secondary text-sm font-mono">
+                      {venture.tagline} · {venture.year}
+                    </p>
                   </div>
-                  <p className="text-text-secondary text-sm font-mono">
-                    {venture.tagline} · {venture.year}
-                  </p>
                 </div>
                 {venture.url && (
                   <a

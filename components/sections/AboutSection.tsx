@@ -11,7 +11,7 @@ export function AboutSection() {
     .filter(Boolean)
 
   return (
-    <section id="sobre-mi" className="py-24 px-5 md:px-8" aria-labelledby="about-heading">
+    <section id="sobre-mi" className="py-24 px-5 md:px-8 bg-surface/40" aria-labelledby="about-heading">
       <div className="max-w-reading mx-auto">
         <SectionHeader
           label="Historia"

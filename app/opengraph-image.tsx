@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Tomás Lekerman — Fundador & Emprendedor'
+export const alt = 'Tomás Eitan Lekerman — Operaciones · E-commerce · Producto'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -33,13 +33,13 @@ export default function OpenGraphImage() {
         </div>
         <div
           style={{
-            fontSize: 72,
+            fontSize: 64,
             fontWeight: 600,
             lineHeight: 1.1,
             marginBottom: 24,
           }}
         >
-          Tomás Lekerman
+          Tomás Eitan Lekerman
         </div>
         <div
           style={{
@@ -48,7 +48,7 @@ export default function OpenGraphImage() {
             lineHeight: 1.4,
           }}
         >
-          Fundador de Kokora Matcha · Emprendedor · Builder
+          Operaciones · E-commerce · Producto
         </div>
       </div>
     ),

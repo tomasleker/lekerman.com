@@ -25,7 +25,7 @@ export function StructuredData() {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Tomás Lekerman',
+    name: profile.name,
     url: 'https://lekerman.com',
     description: profile.bio,
     author: {

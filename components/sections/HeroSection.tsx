@@ -5,9 +5,12 @@ import { profile } from '@/data/profile'
 import { socialLinks } from '@/data/social'
 import { Button } from '@/components/ui/Button'
 import { SocialLinks } from '@/components/ui/SocialLinks'
+import { ProfileAvatar } from '@/components/ui/ProfileAvatar'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 export function HeroSection() {
+  const nameParts = profile.name.split(' ')
+
   return (
     <section
       id="hero"
@@ -22,63 +25,75 @@ export function HeroSection() {
       </div>
 
       <div className="relative max-w-reading mx-auto w-full">
-        <AnimatedSection delay={0}>
-          <div className="flex items-center gap-1.5 text-text-muted text-sm font-mono mb-8">
-            <MapPin size={13} strokeWidth={1.5} />
-            <span>{profile.location}</span>
+        <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-14">
+          <AnimatedSection delay={0}>
+            <ProfileAvatar
+              name={profile.name}
+              initials={profile.initials}
+            />
+          </AnimatedSection>
+
+          <div className="flex-1 min-w-0">
+            <AnimatedSection delay={50}>
+              <div className="flex items-center gap-1.5 text-text-muted text-sm font-mono mb-6 md:mb-8">
+                <MapPin size={13} strokeWidth={1.5} />
+                <span>{profile.location}</span>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={100}>
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.08] text-balance mb-6">
+                {nameParts[0]}{' '}
+                <span className="text-text-secondary font-medium">{nameParts[1]}</span>{' '}
+                <span className="text-accent">{nameParts.slice(2).join(' ')}</span>
+              </h1>
+            </AnimatedSection>
+
+            <AnimatedSection delay={200}>
+              <p className="text-xl md:text-2xl text-text-secondary font-body font-light mb-4 text-pretty">
+                {profile.tagline}
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection delay={300}>
+              <p className="text-base md:text-lg text-text-secondary leading-relaxed max-w-[52ch] mb-10 text-pretty">
+                {profile.bio}
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection delay={400}>
+              <div className="flex flex-wrap items-center gap-4 mb-8">
+                <Button
+                  variant="primary"
+                  size="md"
+                  onClick={() =>
+                    document
+                      .getElementById('contacto')
+                      ?.scrollIntoView({ behavior: 'smooth' })
+                  }
+                >
+                  <span>Conectar</span>
+                  <ArrowRight size={15} className="ml-2" strokeWidth={2} />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="md"
+                  onClick={() =>
+                    document
+                      .getElementById('sobre-mi')
+                      ?.scrollIntoView({ behavior: 'smooth' })
+                  }
+                >
+                  Conocer más
+                </Button>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={500}>
+              <SocialLinks links={socialLinks} variant="pill" iconSize={15} />
+            </AnimatedSection>
           </div>
-        </AnimatedSection>
-
-        <AnimatedSection delay={100}>
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.05] text-balance mb-6">
-            {profile.firstName}{' '}
-            <span className="text-accent">{profile.name.split(' ').slice(-1)[0]}</span>
-          </h1>
-        </AnimatedSection>
-
-        <AnimatedSection delay={200}>
-          <p className="text-xl md:text-2xl text-text-secondary font-body font-light mb-4 text-pretty">
-            {profile.tagline}
-          </p>
-        </AnimatedSection>
-
-        <AnimatedSection delay={300}>
-          <p className="text-base md:text-lg text-text-secondary leading-relaxed max-w-[52ch] mb-10 text-pretty">
-            {profile.bio}
-          </p>
-        </AnimatedSection>
-
-        <AnimatedSection delay={400}>
-          <div className="flex flex-wrap items-center gap-4 mb-12">
-            <Button
-              variant="primary"
-              size="md"
-              onClick={() =>
-                document
-                  .getElementById('contacto')
-                  ?.scrollIntoView({ behavior: 'smooth' })
-              }
-            >
-              <span>Conectar</span>
-              <ArrowRight size={15} className="ml-2" strokeWidth={2} />
-            </Button>
-            <Button
-              variant="outline"
-              size="md"
-              onClick={() =>
-                document
-                  .getElementById('sobre-mi')
-                  ?.scrollIntoView({ behavior: 'smooth' })
-              }
-            >
-              Conocer más
-            </Button>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection delay={500}>
-          <SocialLinks links={socialLinks} iconSize={18} />
-        </AnimatedSection>
+        </div>
       </div>
 
       <div

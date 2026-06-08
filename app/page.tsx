@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <StructuredData />
       <HeroSection />
-      <div className="divide-y divide-border/30">
+      <div>
         <AboutSection />
         <ExperienceSection />
         <VenturesSection />
